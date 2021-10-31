@@ -19,7 +19,7 @@ body {
 }
 .weather-container .search-input {
   margin: 20px;
-  width: 150%;
+  width: 20vw;
   box-shadow: -3px 0px 14px 0px rgba(0, 0, 0, 0.53);
   -webkit-box-shadow: -3px 0px 14px 0px rgba(0, 0, 0, 0.53);
   -moz-box-shadow: -3px 0px 14px 0px rgba(0, 0, 0, 0.53);
@@ -63,7 +63,9 @@ body {
   -webkit-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
-
+.weather-container .night {
+  background-color: #b3d0df;
+}
 /*---------LOADER -------------*/
 .lds-dual-ring {
   display: inline-block;
@@ -87,5 +89,18 @@ body {
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 500px) {
+  html {
+    width: 100%;
+    overflow: hidden;
+  }
+  .weather-container {
+    margin-top: 20%;
+  }
+  .weather-container .search-input {
+    width: 100%;
   }
 }

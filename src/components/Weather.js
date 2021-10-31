@@ -78,7 +78,7 @@ const Weather = () => {
                             </div>
                             )  
                             :
-                            <div className="current"><span>{Math.round(weather?.main?.temp)}°c</span></div>
+                            <div className={`current ${image === night ? 'night' : ''}`}><span>{Math.round(weather?.main?.temp)}°c</span></div>
                     }
 
                     </div>
